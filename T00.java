@@ -1,3 +1,5 @@
+// 12S25051 Winni Sitinjak
+
 import java.util.*;
 import java.lang.Math;
 
@@ -5,14 +7,14 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b;
+        int a, b, tambah, kali;
 
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("bilangan pertama: Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (b % 2 == 0) {
             System.out.println("Bilangan kedua: Genap");
@@ -22,17 +24,23 @@ public class T00 {
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (b > a) {
-                System.out.println("Bilangan kedua Lebih besar");
+            if (a < b) {
+                System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println(" Kedua bilangan sama besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0 && b % 2 == 0) {
-            System.out.println("Keduanya genap hasil perjumlahan:" + a + b);
+        if (a % 2 == 0) {
+            if (b % 2 == 0) {
+                tambah = a + b;
+                System.out.println("Hasil penjumlahan: " + tambah);
+            } else {
+                System.out.println("Berbeda jenis");
+            }
         } else {
-            if (a % 2 == 0 && b % 2 == 0) {
-                System.out.println("Keduanya ganjil hasil perkalian:" + a * b);
+            if (b % 2 != 0) {
+                kali = a * b;
+                System.out.println("Hasil perkalian: " + kali);
             } else {
                 System.out.println("Berbeda jenis");
             }

@@ -29,10 +29,10 @@ public class T00 {
             }
         }
         if (a % 2 == 0 && b % 2 == 0) {
-            System.out.println("Keduanya genap hasil perjumlahan=" + a + b);
+            System.out.println("Keduanya genap hasil perjumlahan:" + a + b);
         } else {
             if (a % 2 == 0 && b % 2 == 0) {
-                System.out.println("Keduanya ganjil hasil perkalian=" + a * b);
+                System.out.println("Keduanya ganjil hasil perkalian:" + a * b);
             } else {
                 System.out.println("Berbeda jenis");
             }
